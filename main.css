@@ -1,29 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
     background-color: #252525;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    width: 0.5em;
+    background-color: white;
+    margin-inline-start: 0 !important;
+}
+
+p {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+.window-title {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    color: white;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: white;
+    padding-left: 2em;
 }
 
 .header {
     border-style: solid;
     border-width: 0.3em;
     border-color: white;
-    padding: 5em;
+    display: flex;
+    height: 18vh;
+}
+
+.header-title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
 }
 
 .main-wrapper {
-    height: 200px;
+    height: 82vh;
+    display: flex;
 }
-
 .side-nav {
     border-style: solid;
     border-width: 0.6em;
     border-color: white;
+    display: flex;
 }
 
 .side-nav-contents {
@@ -31,6 +69,10 @@ body {
     flex-direction: column;
     text-align: center;
     color: white;
+}
+
+.right-content {
+    display: flex;
 }
 
 .encryption {
@@ -43,6 +85,79 @@ body {
 
 .server {
     flex: 1;
+}
+
+.status-top {
+    color: white;
+    position: relative;
+}
+
+.item-status {
+    position:absolute;
+    bottom:1em;
+    right:2em;
+}
+
+.bottom-status {
+    text-align: right;
+    margin-right: 1em;
+    margin-top: 5vh;
+}
+
+.status-yes {
+    color: greenyellow;
+}
+
+.status-ping {
+    color: yellow;
+}
+
+.status-error {
+    color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  border: 3px solid #898989;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 400px;
+  width: 600px;
+  margin: 2em;
+}
+
+.top {
+  padding: 10px;
+  background: #898989;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+}
+
+.window-title {
+    flex: 1;
+    color: white;
+}
+
+.actions {
+    flex: 1;
+    text-align: right;
+    color: white;
+}
+
+.content {
+    height: 352px;
+    background-color: #898989;
+}
+
+.window-img {
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
 }
 
 .col-1 {width: 8.33%;}
