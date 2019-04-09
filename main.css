@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
     background-color: #252525;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-y: hidden;
+    background-image: url("assets/img/bg.jpg");
+    background-size: contain;
 }
 
 hr {
@@ -16,6 +19,25 @@ hr {
 p {
     margin-block-start: 0 !important;
     margin-block-end: 0 !important;
+}
+
+.shapes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+} 
+.css-shapes-preview{ 
+    position: relative; 
+    height: 30px; 
+    width: 21px; 
+    margin-right: 1em;
+    background-color: #FFFFFF; 
+    top: 0px; 
+    transform: rotate(0deg) skew(147deg); 
+    -webkit-transform: rotate(0deg) skew(147deg); 
 }
 
 .window-title {
