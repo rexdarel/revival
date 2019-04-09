@@ -3,9 +3,9 @@ body {
     background-color: #252525;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow-y: hidden;
     background-image: url("assets/img/bg.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 hr {
@@ -22,8 +22,9 @@ p {
 }
 
 .shapes {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    width: 25%;
+    grid-template-columns: 45% 8% 8% 8% 8% 8% 8% 8%;
 }
 
 *, *:before, *:after{ 
@@ -31,14 +32,50 @@ p {
 } 
 .css-shapes-preview{ 
     position: relative; 
-    height: 30px; 
+    height: 55px; 
     width: 21px; 
     margin-right: 1em;
     background-color: #FFFFFF; 
     top: 0px; 
     transform: rotate(0deg) skew(147deg); 
-    -webkit-transform: rotate(0deg) skew(147deg); 
+    -webkit-transform: rotate(0deg) skew(130deg); 
 }
+
+.css-shapes-preview1{ 
+    position: relative; 
+    height: 55px; 
+    width: 10px; 
+    margin-right: 1em;
+    background-color: #FFFFFF; 
+    top: 0px; 
+    transform: rotate(0deg) skew(130deg); 
+    -webkit-transform: rotate(0deg) skew(130deg); 
+}
+
+.css-shapes-preview2{ 
+    position: relative; 
+    height: 15px; 
+    width: 240px; 
+    padding: 0px;
+    margin-top: -5px;
+    margin-left: -10px;
+    background-color: #FFFFFF; 
+    transform: rotate(0deg) skew(130deg); 
+    -webkit-transform: rotate(0deg) skew(130deg); 
+}
+
+.css-shapes-preview3{ 
+    position: relative; 
+    height: 15px; 
+    width: 170px; 
+    padding: 0px;
+    margin-top: -9px;
+    margin-left: -40px;
+    background-color: #FFFFFF; 
+    transform: rotate(0deg) skew(130deg); 
+    -webkit-transform: rotate(0deg) skew(130deg); 
+}
+
 
 .window-title {
     margin-block-start: 0 !important;
@@ -46,8 +83,7 @@ p {
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     height: 100vh;
     width: 100vw;
 }
@@ -58,60 +94,58 @@ p {
     border-width: 0.3em;
     border-color: white;
     padding-left: 2em;
+    padding-top: 1em;
 }
 
 .header {
     border-style: solid;
     border-width: 0.3em;
     border-color: white;
-    display: flex;
     height: 18vh;
+    display: grid;
+    margin-top: 0.1vh;
+    grid-template-columns: 22% 50% 28%;
 }
 
 .header-title {
     color: white;
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    padding-left: 2em;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: white;
 }
 
 .main-wrapper {
     height: 82vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 .side-nav {
     border-style: solid;
     border-width: 0.6em;
     border-color: white;
-    display: flex;
 }
 
 .side-nav-contents {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 30% 30% 30% 10%;
     text-align: center;
     color: white;
 }
 
 .right-content {
-    display: flex;
-}
-
-.encryption {
-    flex: 1;
-}
-
-.user {
-    flex: 1;
-}
-
-.server {
-    flex: 1;
+    display: grid;
+    grid-template-columns: 50% 45% 30%;
 }
 
 .status-top {
     color: white;
     position: relative;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: white;
 }
 
 .item-status {
@@ -157,16 +191,15 @@ p {
   background: #898989;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .window-title {
-    flex: 1;
     color: white;
 }
 
 .actions {
-    flex: 1;
     text-align: right;
     color: white;
 }
