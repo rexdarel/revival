@@ -1,0 +1,59 @@
+body {
+    background-color: #252525;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: white;
+    padding: 5em;
+}
+
+.main-wrapper {
+    height: 200px;
+}
+
+.side-nav {
+    border-style: solid;
+    border-width: 0.6em;
+    border-color: white;
+}
+
+.side-nav-contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.encryption {
+    flex: 1;
+}
+
+.user {
+    flex: 1;
+}
+
+.server {
+    flex: 1;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
